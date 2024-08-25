@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d66536">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#d66536">
+</head>
+<body>
+    <header>
+        <h1>Online Bookstore</h1>
+    </header>
+
+    <main>
+        <section class="book-grid">
+            <div class="book-card">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLnsvHfPHw8HXmsYGwbNCyYPgszreWfBblCSMHKVXm50NTe-Ha" alt="book cover">
+                <h3>Atomic Habits</h3>
+                <p>by James Clear</p>
+                <p class="price">Rs. 5500/-</p>
+            </div>
+
+            <div class="book-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeD7HB0bQgkNgFuzBWGfwSExCoa5l5DHhI4w&s" alt="book cover">
+                <h3>Think Like a Monk</h3>
+                <p>by Jay Shetty</p>
+                <p class="price">Rs. 6500/-</p>
+            </div>
+
+            <div class="book-card">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1387708466i/275600.jpg" alt="book cover">
+                <h3>The Village by the Sea</h3>
+                <p>by Anita Desai</p>
+                <p class="price">Rs. 3000/-</p>
+            </div>
+
+            <div class="book-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuNlCvAv_OULuic0xFDzUH5rad7LTe-QV38Q&s" alt="book cover">
+                <h3>Refuge</h3>
+                <p>by Sajla Anees</p>
+                <p class="price">Rs. 2800/-</p>
+            </div>
+
+            <div class="book-card">
+                <img src="https://i.harperapps.com/hcuk/covers/9780007230594/x400.jpg" alt="book cover">
+                <h3>Born to Run</h3>
+                <p>by Micheal Morpugo</p>
+                <p class="price">Rs. 4800/-</p>
+            </div>
+        </section>
+
+        <section class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book</th>
+                        <th>Genre</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="bold">Atomic Habits</td>
+                        <td>Self help, Personal Development</td>
+                        <td class="description">Atomic Habits provides a practical guide for building good habits and breaking bad ones. James Clear introduces the concept of "atomic habits," which are small changes that can lead to significant personal growth over time. The book offers strategies rooted in psychology and neuroscience, helping readers create systems for lasting behavioral change.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="bold">Think like a Monk</td>
+                        <td>Self help, Spirituality</td>
+                        <td class="description">In Think Like a Monk, Jay Shetty shares lessons learned from his time as a monk to help readers find peace, clarity, and purpose in their lives. The book blends ancient wisdom with modern insights, teaching readers how to overcome negativity, reduce stress, and build habits for a fulfilling life.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="bold">The Village by the Sea</td>
+                        <td>Fiction, Young Adult Literature</td>
+                        <td class="description"> The Village by the Sea tells the story of a poor family living in a small village in India. The novel focuses on the struggles of two children, Lila and Hari, who face hardship and adversity as they try to provide for their family. Set against the backdrop of industrialization and rural poverty, it is a tale of survival, resilience, and hope.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <form action="/submit_order" method="post">
+                <fieldset class="field">
+                    <h3>Select Books:</h3>
+                <label>
+                    <input type="checkbox" name="books" value="Atomic Habits">Atomic Habits - Rs. 5500/-
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="books" value="Think like a monk">Think Like a Monk - Rs. 6500/-
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="books" value="The Village by the Sea">The Village by the Sea - Rs. 3000/-
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="books" value="Born to Run">Born to Run - Rs. 4800/-
+                </label><br>
+                </fieldset>
+
+                <fieldset class="field">
+                    <h3>Contact Information:</h3>
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                </fieldset>
+                
+                <fieldset class="field">
+                    <h3>Shipping Information</h3>
+                <label for="address">Shipping Address:</label><br>
+                <input type="text" id="address" name="address" required><br><br>
+
+                <label for="city">City:</label><br>
+                <input type="text" id="city" name="city" required><br><br>
+
+                <label for="zip">ZIP/Postal Code</label><br>
+                <input type="text" id="zip" name="zip" required><br><br>
+                </fieldset><br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; This is a copyrighted website</p>
+    </footer>
+</body>
+</html>
